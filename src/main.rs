@@ -1,17 +1,15 @@
-use time::{Duration, PrimitiveDateTime as DateTime};
+fn main() {
+    println!(
+        "
+  _____________________________________________ ╲╲╲______      
+   __╱╲╲╱╲╲╲╲╲╲╲___╱╲╲╲____╱╲╲╲__╱╲╲╲╲╲╲╲╲╲╲__╱╲╲╲╲╲╲╲╲╲╲╲_     
+    _╲╱╲╲╲╱╱╱╱╱╲╲╲_╲╱╲╲╲___╲╱╲╲╲_╲╱╲╲╲╱╱╱╱╱╱__╲╱╱╱╱╲╲╲╱╱╱╱__    
+     _╲╱╲╲╲___╲╱╱╱__╲╱╲╲╲___╲╱╲╲╲_╲╱╲╲╲╲╲╲╲╲╲╲____╲╱╲╲╲______   
+      _╲╱╲╲╲_________╲╱╲╲╲___╲╱╲╲╲_╲╱╱╱╱╱╱╱╱╲╲╲____╲╱╲╲╲_╱╲╲__  
+       _╲╱╲╲╲_________╲╱╱╲╲╲╲╲╲╲╲╲___╱╲╲╲╲╲╲╲╲╲╲____╲╱╱╲╲╲╲╲___ 
+        _╲╱╱╱___________╲╱╱╱╱╱╱╱╱╱___╲╱╱╱╱╱╱╱╱╱╱______╲╱╱╱╱╱____"
+    );
+    println!("\nThis time I am doing it, I am learning Rust. If it's from YouTube tutorials or the Rust Book.");
 
-pub fn reverse_string(input: &str) -> String {
-    input.chars().rev().collect()
+    println!("I AM LEARNING RUST!");
 }
-
-pub fn after(start: DateTime) -> DateTime {
-    let billion_seconds = 10i64.pow(9);
-    let duration = Duration::seconds(billion_seconds);
-
-    start.checked_add(duration).unwrap()
-}
-
-// to-do cli
-pub fn todo_cli() {}
-
-fn main() {}
