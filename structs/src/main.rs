@@ -87,6 +87,6 @@ fn main() {
 
     for rect in &jbenhod.rectangles {
         rect.draw_rect_in_terminal();
-        println!("{:?}", rect);
+        println!("{:#?}", rect);
     }
 }
